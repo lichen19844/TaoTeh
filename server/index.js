@@ -1,3 +1,5 @@
+let dotenv = require('dotenv');
+dotenv.config('./env');
 const express = require('express');
 const history = require('connect-history-api-fallback');
 const expressJwt = require("express-jwt");
