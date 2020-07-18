@@ -112,7 +112,7 @@ export default {
 			isBack: true,
 
 			image: null,
-      windowChange: () => {}
+            windowChange: () => {}
 		}
 	},
     head () {

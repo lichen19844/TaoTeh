@@ -18,8 +18,7 @@ module.exports = {
     ]
   },
   server: {
-    port: 8000,
-    // host: 'lichenpro.com.cn'
+    port: 8000
   },
   env: {
     baseUrl: process.env.BASE_URL || 'http://localhost:3000/web/api',
@@ -84,7 +83,6 @@ module.exports = {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    },
-    // publicPath: 'https://www.lichenpro.com.cn/'
+    }
   }
 }

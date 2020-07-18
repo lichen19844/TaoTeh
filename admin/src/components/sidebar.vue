@@ -29,7 +29,7 @@
                 <span v-else @click="hide" class="el-icon-turn-off"></span>
             </transition>
         </div>
-        <div class="misk" style="background-color:rgba(176, 14, 37, 0.7);"></div>
+        <div class="misk"></div>
         <span class="btn" :class="[show ? 'el-icon-close' : 'el-icon-heavy-rain']" @click="toggle"></span>
     </div>
 </template>
