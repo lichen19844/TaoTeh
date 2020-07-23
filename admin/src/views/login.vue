@@ -30,7 +30,7 @@
                     <input type="text" placeholder="用户名" v-model="create.username">
                     <input type="password" placeholder="密码" v-model="create.password">
                     <input type="password" placeholder="重复密码" v-model="create.passwords">
-                    <button @click="createSubmit">sign in</button>
+                    <button @click="createSubmit">sign up</button>
 
                     <p><span class="el-icon-warning"></span> 管理员账号只能创建一次, 请牢记账号和密码！ </p>
 
@@ -222,10 +222,13 @@ export default {
         div img{
             display: none;
         }
+        // 因为有input元素，所以能够使用:focus-within
         .ipt:focus-within{
+            // 所有的img先隐藏
             & ~ img{
                 display: none;
             }
+            // 选中相关的img显示出来
             img{
                 display: block;
             }
@@ -315,6 +318,7 @@ export default {
     letter-spacing: 1px;
     z-index: 99;
 }
+// 背景动效
 .bg-bubbles {
     position: absolute;
     top: 0;
@@ -395,7 +399,7 @@ export default {
             border-radius: 50%;
         }
     }
-    // 自定义 square 动画；
+    // 自定义 square 动画细节；
     @keyframes square {
         0% {
             opacity: 0.5;

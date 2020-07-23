@@ -71,10 +71,11 @@ module.exports = (app, plugin, model) => {
             username: req.body.username,
             password: pwd
         }
+        // len如果有计数，说明已经有管理员账号存在了，不再允许其它人注册了
         if(len){
             res.json({
                 status: 2,
-                message: '请勿重复注册, 如遗忘密码, 自行操作数据库处理!',
+                message: '您没有管理员权限，请勿注册',
             })
         }else{
             // 创建账号

@@ -284,7 +284,7 @@ export default {
                 color: #0e8bff;
                 padding-left: 15px;
                 &::after{
-                    content: "\e6a4";
+                    content: "\e6bd";
                     font-family: element-icons!important;
                     speak: none;
                     font-style: normal;
