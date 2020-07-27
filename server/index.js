@@ -60,7 +60,7 @@ const global = fs.readdirSync(__dirname).filter(i => fileName.includes(i)).reduc
         let name = i.replace('.js', '')
         let nameKey = i.replace('.js', '')
         if(item == 'models'){
-          // 将匹配到的任何非空字符，转换成大写
+          // /^\S/表示将匹配到的任何非空字符，转换成大写
           nameKey = name.replace(/^\S/, s => s.toUpperCase())
         }
         total[item][nameKey] = require(  __dirname + '/' + item + '/' +  name)
