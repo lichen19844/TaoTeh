@@ -3,7 +3,7 @@
         <Header 
             v-if="refresh" 
             :music="music" 
-            title="好好学习, 天天向上!"
+            title="上善若水,夫唯不争"
         ></Header>
 
         <section class="content">

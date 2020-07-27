@@ -63,6 +63,7 @@
 
 		<div class="foot" v-if="info.cover.icp_txt">
 			<a :href="info.cover.icp_link" target="_blank">{{info.cover.icp_txt}}</a>
+      <p>Copyright © 2020 | All right reserved</p>
 		</div>
 
 		<BackTop v-if="isBack"></BackTop>
@@ -597,12 +598,18 @@ export default {
 		text-align: center;
 		a{
 			margin: 0 auto;
-			font-size: 13px;
+			font-size: 14px;
 			color: #666;
 			text-decoration: none;
 			display: inline-block;
 			padding: 1px 0 2px;
 		}
+    p{
+      font-size: 14px;
+			color: #666;
+      // display: inline-block;
+      margin: 10px auto;
+    }
 	}
 	.nav{
 		position: fixed;
