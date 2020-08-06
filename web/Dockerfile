@@ -6,7 +6,7 @@ COPY . /web
 
 WORKDIR /web
 
-RUN npm config set registry https://registry.npm.taobao.org
+RUN npm config set registry https://mirrors.huaweicloud.com/repository/npm/
 
 RUN npm install
 
