@@ -33,7 +33,7 @@
                     <p>
                         愿你雨天有伞，深夜有灯，一生温暖纯良，不舍爱与自由，与尘世的万千美好都能不期而遇。
                         <br>
-                        欢迎订阅心情小镇的新文章通知，愿好~~
+                        欢迎订阅时光机的新文章通知，愿好~~
                     </p>
                     <input v-model="email" type="text" placeholder="Your email address">
                     <button type="submit" @click="submit">{{count?`${count}s后可重发`:'subscribe'}}</button>   

@@ -99,7 +99,7 @@ export default {
 
         },
         myself(){
-            this.$router.push('/Libai')
+            this.$router.push('/Lichen')
         },
         toIndex(){
             this.$router.push('/')

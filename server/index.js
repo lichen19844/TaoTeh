@@ -25,7 +25,7 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
  * 跳过用户接口
  */
 app.use(expressJwt({
-    secret: "Libai"
+    secret: "Lichen"
 }).unless({
     path: ["/admin/api/login", "/admin/api/user"]
 }));
